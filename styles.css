@@ -615,7 +615,7 @@ a { color: inherit; }
 .chair__row { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
 .chair__row img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 3px solid var(--razor); border-radius: 14px; }
 .chair__credit { margin-top: 1rem; font-size: 0.95rem; }
-.chair__credit a { text-underline-offset: 4px; }
+.chair__credit a { display: inline-flex; align-items: center; min-height: 48px; text-underline-offset: 4px; }
 @media (max-width: 599px) { .chair__row { grid-template-columns: 1fr; max-width: 22rem; } }
 
 /* ---------- Page header (inner pages) ---------- */
