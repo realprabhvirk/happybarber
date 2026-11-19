@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Happy Barber">
+  <title>Happy Barber</title>
+  <rect width="64" height="64" rx="14" fill="#14181B"/>
+  <g transform="translate(32 32) scale(0.62) translate(-120 -124)">
+  <rect x="77.00" y="110" width="8.0" height="24.00" rx="3" fill="#EEF1EF"/>
+  <rect x="90.00" y="110" width="8.0" height="32.89" rx="3" fill="#EEF1EF"/>
+  <rect x="103.00" y="110" width="8.0" height="38.22" rx="3" fill="#EEF1EF"/>
+  <rect x="116.00" y="110" width="8.0" height="40.00" rx="3" fill="#EEF1EF"/>
+  <rect x="129.00" y="110" width="8.0" height="38.22" rx="3" fill="#EEF1EF"/>
+  <rect x="142.00" y="110" width="8.0" height="32.89" rx="3" fill="#EEF1EF"/>
+  <rect x="155.00" y="110" width="8.0" height="24.00" rx="3" fill="#EEF1EF"/>
+  <rect x="74" y="98" width="92" height="14" rx="7" fill="#E8A800" stroke="#E8A800" stroke-width="3"/>
+  </g>
+</svg>
