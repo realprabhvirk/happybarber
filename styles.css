@@ -398,113 +398,67 @@ a { color: inherit; }
 .section__title { font-size: clamp(2.2rem, 7vw, 4rem); }
 .section__intro { margin-top: 0.75rem; font-size: 1.15rem; }
 
-/* ---------- The Signboard ---------- */
+/* ---------- Service cards ---------- */
 
-.board {
-  position: relative;
-  background-color: var(--dastaar);
-  /* Paint-chip wear: tiny flecks, CSS only, under 4 percent opacity. */
-  background-image:
-    radial-gradient(circle at 18% 32%, rgba(238, 241, 239, 0.035) 0 2px, transparent 3px),
-    radial-gradient(circle at 72% 64%, rgba(238, 241, 239, 0.03) 0 3px, transparent 4px),
-    radial-gradient(circle at 44% 88%, rgba(238, 241, 239, 0.035) 0 1.5px, transparent 2.5px);
-  background-size: 61px 53px, 97px 83px, 43px 71px;
-  border: 6px solid var(--sarson);
-  border-radius: var(--radius);
-  box-shadow: 0 0 0 3px var(--dastaar), 0 0 0 5px var(--razor);
-  color: var(--lather);
-  padding: 20px 14px 8px;
-}
+.svc-grid { display: grid; gap: 20px; }
 
-.board__plate {
+.svc {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.25rem 1rem;
-  padding: 0 4px 14px;
-  border-bottom: 3px solid var(--sarson);
-}
-.board__plate-pa { color: var(--sarson); font-weight: 800; font-size: 1.5rem; }
-.board__plate-en {
-  font-family: var(--font-display);
-  font-stretch: 125%;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.8rem;
-  color: var(--steel);
+  flex-direction: column;
+  background: var(--dastaar);
+  color: var(--lather);
+  border: 4px solid var(--sarson);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
-.board__row {
-  display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
-  grid-template-areas:
-    "tool text"
-    ". action";
-  column-gap: 12px;
-  row-gap: 4px;
-  padding: 18px 4px;
-  border-bottom: 1px dashed rgba(154, 166, 173, 0.45);
-}
-.board__row:last-child { border-bottom: 0; }
+.svc__fig { background: var(--steel); }
+.svc__fig img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 
-.tool {
-  grid-area: tool;
-  width: 44px;
-  height: 44px;
-  margin-top: 2px;
-  fill: none;
-  stroke: var(--steel);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.svc__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: 16px 18px 20px;
 }
-
-.board__text { grid-area: text; min-width: 0; }
-.board__pa {
-  display: block;
+.svc__pa {
   color: var(--sarson);
   font-family: var(--font-pa);
   font-weight: 800;
-  font-size: clamp(1.75rem, 6.4vw, 2.5rem);
-  line-height: 1.2;
+  font-size: 1.75rem;
+  line-height: 1.25;
 }
-.board__en {
-  display: block;
-  margin-top: 2px;
+.svc__en { margin-top: 2px; font-size: 1.2rem; font-weight: 600; line-height: 1.3; }
+.svc__desc { margin-top: 6px; font-size: 1rem; color: var(--steel); }
+.svc__body .pill { margin-top: auto; }
+.svc__body .svc__en + .pill, .svc__body .svc__desc + .pill { margin-top: 16px; }
+
+@media (min-width: 600px) { .svc-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .svc-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; } }
+
+.credit { margin-top: 1.25rem; font-size: 0.95rem; max-width: 46rem; }
+.credit a { display: inline-flex; align-items: center; min-height: 48px; text-underline-offset: 4px; }
+
+.more { margin-top: 0.5rem; }
+.more a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
   font-weight: 600;
   font-size: 1.15rem;
-  color: var(--lather);
-}
-.board__desc {
-  display: block;
-  margin-top: 4px;
-  font-size: 1rem;
-  color: var(--steel);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--sarson);
 }
 
-.board__action {
-  grid-area: action;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 6px;
-}
-.board__leader {
-  flex: 1;
-  min-width: 16px;
-  align-self: center;
-  border-bottom: 3px dotted rgba(154, 166, 173, 0.7);
-}
-
-/* Prices slot: uncomment the span in the markup and these styles are ready. */
+/* Prices slot: uncomment the span in a card and these styles are ready. */
 .rate {
   font-family: var(--font-display);
   font-stretch: 125%;
   font-weight: 800;
   color: var(--sarson);
-  white-space: nowrap;
+  margin-top: 8px;
 }
 
 .pill {
@@ -524,42 +478,6 @@ a { color: inherit; }
   white-space: nowrap;
 }
 .pill:hover { background: var(--sarson); border-color: var(--sarson); color: var(--razor); }
-
-.board__more { display: flex; justify-content: flex-start; padding: 16px 4px 12px; }
-.board__more a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 48px;
-  color: var(--sarson);
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 2px;
-}
-
-@media (min-width: 640px) {
-  .board { padding: 28px 32px 12px; }
-  .board__plate-pa { font-size: 1.9rem; }
-  .board__plate-en { font-size: 0.95rem; }
-  .board__row {
-    grid-template-columns: 56px auto minmax(24px, 1fr) auto;
-    grid-template-areas: "tool text leader action";
-    align-items: center;
-    column-gap: 20px;
-    padding: 22px 4px;
-  }
-  .tool { width: 52px; height: 52px; }
-  .board__action { display: contents; }
-  .board__leader { grid-area: leader; align-self: center; }
-  .board__action .pill { grid-area: action; }
-  .board__action .rate { grid-area: action; }
-}
-
-/* Reveal: rows start tucked and hidden only when JS marks them pending. */
-@media (prefers-reduced-motion: no-preference) {
-  .board__row { transition: opacity 0.4s ease, transform 0.4s ease; }
-  .board__row.is-pending { opacity: 0; transform: translateY(8px); }
-}
 
 /* ---------- Find us band (navy) ---------- */
 
@@ -607,16 +525,6 @@ a { color: inherit; }
 @media (min-width: 900px) {
   .band__grid { grid-template-columns: 1.15fr 1fr; gap: 4rem; }
 }
-
-/* ---------- From the chair (photo slot, hidden until photos exist) ---------- */
-
-.chair { display: none; }
-.chair.has-photos { display: block; }
-.chair__row { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
-.chair__row img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 3px solid var(--razor); border-radius: 14px; }
-.chair__credit { margin-top: 1rem; font-size: 0.95rem; }
-.chair__credit a { display: inline-flex; align-items: center; min-height: 48px; text-underline-offset: 4px; }
-@media (max-width: 599px) { .chair__row { grid-template-columns: 1fr; max-width: 22rem; } }
 
 /* ---------- Page header (inner pages) ---------- */
 

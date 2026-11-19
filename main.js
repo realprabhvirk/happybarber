@@ -83,19 +83,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
     header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
   }
-
-  /* ---- Signboard reveal, one row at a time ---- */
-  const rows = document.querySelectorAll('.board__row');
-  if (rows.length && 'IntersectionObserver' in window && !reduceMotion.matches) {
-    rows.forEach((r) => r.classList.add('is-pending'));
-    const io = new IntersectionObserver((entries) => {
-      const showing = entries.filter((en) => en.isIntersecting);
-      showing.forEach((en, i) => {
-        const row = en.target;
-        io.unobserve(row);
-        setTimeout(() => row.classList.remove('is-pending'), i * 60);
-      });
-    }, { threshold: 0.15 });
-    rows.forEach((r) => io.observe(r));
-  }
 });

@@ -1,38 +1,56 @@
 {
-  "note": "Sample photos, not Happy Barber's shop. Replace with real photos from Happy when he sends them. All three are licensed CC BY 2.0, which requires the credit shown on the home page.",
+  "note": "Sample photos, not Happy Barber's shop. Replace with real photos from Happy when he sends them.",
   "images": [
     {
       "file": "barber-trimming-hair-with-clipper-in-front-of-mirror.jpg",
       "webp": "barber-trimming-hair-with-clipper-in-front-of-mirror.webp",
+      "used_for": "Haircut",
       "original_name": "Young men with trendy haircut at barber shop.jpg",
       "author": "Nenad Stojkovic",
       "licence": "CC BY 2.0",
       "licence_url": "https://creativecommons.org/licenses/by/2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Young_men_with_trendy_haircut_at_barber_shop.jpg",
-      "edits": "Cropped to 4:5 and resized to 800 by 1000.",
+      "edits": "Cropped to 4:5 and resized to 800 by 1000. Credit is shown on the pages.",
       "alt": "A barber in a checked shirt trims a seated client's hair with a clipper, with a mirror behind them"
     },
     {
       "file": "barber-holding-comb-and-clipper-against-short-hair.jpg",
       "webp": "barber-holding-comb-and-clipper-against-short-hair.webp",
+      "used_for": "Fade and taper",
       "original_name": "Barber cutting hair with comb. Back view of young man in barber shop.jpg",
       "author": "Nenad Stojkovic",
       "licence": "CC BY 2.0",
       "licence_url": "https://creativecommons.org/licenses/by/2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Barber_cutting_hair_with_comb._Back_view_of_young_man_in_barber_shop.jpg",
-      "edits": "Cropped to 4:5 and resized to 800 by 1000.",
+      "edits": "Cropped to 4:5 and resized to 800 by 1000. Credit is shown on the pages.",
       "alt": "Close view of a barber's hands holding a comb and a clipper against a client's short hair"
     },
     {
-      "file": "barber-shaving-hairline-with-straight-razor.jpg",
-      "webp": "barber-shaving-hairline-with-straight-razor.webp",
-      "original_name": "Barber brings a haircut and beard to his client.jpg",
-      "author": "Shixart1985",
-      "licence": "CC BY 2.0",
-      "licence_url": "https://creativecommons.org/licenses/by/2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Barber_brings_a_haircut_and_beard_to_his_client.jpg",
-      "edits": "Cropped to 4:5 and resized to 800 by 1000.",
-      "alt": "A barber shaves the hairline of a seated client with a straight razor"
+      "file": "kids-haircut-with-neat-side-parting.jpg",
+      "webp": "kids-haircut-with-neat-side-parting.webp",
+      "used_for": "Kids haircut",
+      "supplied_by": "site owner",
+      "rights": "Not verified. Source and licence unknown. Shows an identifiable child, so check permission before launch.",
+      "edits": "Cropped to 4:5.",
+      "alt": "A young boy in a barber's cape with a neat side-parted haircut and short faded sides"
+    },
+    {
+      "file": "barber-trimming-beard-with-trimmer-client-leaning-back.jpg",
+      "webp": "barber-trimming-beard-with-trimmer-client-leaning-back.webp",
+      "used_for": "Beard trim and shape",
+      "supplied_by": "site owner",
+      "rights": "Not verified. Source and licence unknown.",
+      "edits": "Cropped to 4:5.",
+      "alt": "A barber trims the beard of a client leaning back in the chair"
+    },
+    {
+      "file": "barber-shaving-foamed-beard-with-straight-razor.jpg",
+      "webp": "barber-shaving-foamed-beard-with-straight-razor.webp",
+      "used_for": "Clean shave",
+      "supplied_by": "site owner",
+      "rights": "Not verified. Source and licence unknown.",
+      "edits": "Cropped to 4:5.",
+      "alt": "A barber shaves a foam-covered beard with a straight razor"
     }
   ]
 }
