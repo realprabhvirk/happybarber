@@ -1,0 +1,38 @@
+{
+  "note": "Sample photos, not Happy Barber's shop. Replace with real photos from Happy when he sends them. All three are licensed CC BY 2.0, which requires the credit shown on the home page.",
+  "images": [
+    {
+      "file": "barber-trimming-hair-with-clipper-in-front-of-mirror.jpg",
+      "webp": "barber-trimming-hair-with-clipper-in-front-of-mirror.webp",
+      "original_name": "Young men with trendy haircut at barber shop.jpg",
+      "author": "Nenad Stojkovic",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Young_men_with_trendy_haircut_at_barber_shop.jpg",
+      "edits": "Cropped to 4:5 and resized to 800 by 1000.",
+      "alt": "A barber in a checked shirt trims a seated client's hair with a clipper, with a mirror behind them"
+    },
+    {
+      "file": "barber-holding-comb-and-clipper-against-short-hair.jpg",
+      "webp": "barber-holding-comb-and-clipper-against-short-hair.webp",
+      "original_name": "Barber cutting hair with comb. Back view of young man in barber shop.jpg",
+      "author": "Nenad Stojkovic",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Barber_cutting_hair_with_comb._Back_view_of_young_man_in_barber_shop.jpg",
+      "edits": "Cropped to 4:5 and resized to 800 by 1000.",
+      "alt": "Close view of a barber's hands holding a comb and a clipper against a client's short hair"
+    },
+    {
+      "file": "barber-shaving-hairline-with-straight-razor.jpg",
+      "webp": "barber-shaving-hairline-with-straight-razor.webp",
+      "original_name": "Barber brings a haircut and beard to his client.jpg",
+      "author": "Shixart1985",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Barber_brings_a_haircut_and_beard_to_his_client.jpg",
+      "edits": "Cropped to 4:5 and resized to 800 by 1000.",
+      "alt": "A barber shaves the hairline of a seated client with a straight razor"
+    }
+  ]
+}

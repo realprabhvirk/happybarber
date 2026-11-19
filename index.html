@@ -193,14 +193,35 @@
   </section>
 
   <!-- PHOTO SLOT: from-the-chair row, 3 images, 4:5 -->
-  <!-- Hidden by CSS until photos exist. To use it: add the class has-photos to the section,
-       then paste three pictures into the row, for example:
-       <picture><source srcset="images/example.webp" type="image/webp"><img src="images/example.jpg" alt="Describe what the photo shows" width="800" height="1000" loading="lazy"></picture> -->
-  <section class="section chair" aria-labelledby="chair-title">
+  <!-- These three are licensed sample photos (see images/manifest.json), not Happy's shop.
+       When Happy sends real photos, swap the files and alt text here, then delete the sample note and credit. -->
+  <section class="section chair has-photos" aria-labelledby="chair-title">
     <div class="wrap">
-      <h2 class="display section__title" id="chair-title">From the chair</h2>
-      <div class="chair__row">
+      <div class="section__head">
+        <h2 class="display section__title" id="chair-title">Cuts and shaves</h2>
+        <p class="section__intro">Sample photos, not Happy's shop. His own are coming.</p>
       </div>
+      <div class="chair__row">
+        <figure>
+          <picture>
+            <source srcset="images/barber-trimming-hair-with-clipper-in-front-of-mirror.webp" type="image/webp">
+            <img src="images/barber-trimming-hair-with-clipper-in-front-of-mirror.jpg" width="800" height="1000" alt="A barber in a checked shirt trims a seated client's hair with a clipper, with a mirror behind them" loading="lazy">
+          </picture>
+        </figure>
+        <figure>
+          <picture>
+            <source srcset="images/barber-holding-comb-and-clipper-against-short-hair.webp" type="image/webp">
+            <img src="images/barber-holding-comb-and-clipper-against-short-hair.jpg" width="800" height="1000" alt="Close view of a barber's hands holding a comb and a clipper against a client's short hair" loading="lazy">
+          </picture>
+        </figure>
+        <figure>
+          <picture>
+            <source srcset="images/barber-shaving-hairline-with-straight-razor.webp" type="image/webp">
+            <img src="images/barber-shaving-hairline-with-straight-razor.jpg" width="800" height="1000" alt="A barber shaves the hairline of a seated client with a straight razor" loading="lazy">
+          </picture>
+        </figure>
+      </div>
+      <p class="chair__credit">Photos by Nenad Stojkovic and Shixart1985, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>, via Wikimedia Commons. Cropped.</p>
     </div>
   </section>
 
@@ -243,13 +264,13 @@
     </g>
   </symbol>
   <symbol id="t-clipper" viewBox="0 0 48 48">
-    <path d="M15 15 Q15 5 24 5 Q33 5 33 15 V32 H15 Z"/>
-    <path d="M13 32 H35 V37 H13 Z"/>
-    <path d="M17 37 V43"/>
-    <path d="M22 37 V43"/>
-    <path d="M27 37 V43"/>
-    <path d="M32 37 V43"/>
-    <rect x="21.5" y="12" width="5" height="10" rx="2.5" fill="var(--sarson)"/>
+    <path d="M13 14 H35 V19 H13 Z"/>
+    <path d="M16 14 V7"/>
+    <path d="M21 14 V7"/>
+    <path d="M26 14 V7"/>
+    <path d="M31 14 V7"/>
+    <path d="M14.5 19 H33.5 L32 43 Q31.9 45 30 45 H18 Q16.1 45 16 43 Z"/>
+    <rect x="21.5" y="25" width="5" height="11" rx="2.5" fill="var(--sarson)"/>
   </symbol>
 </svg>
 </body>
